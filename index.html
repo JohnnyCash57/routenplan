@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Routenplan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+    }
+    .map {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .map img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .abbiegung {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .abbiegung img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    /* Für größere Bildschirme */
+    @media (min-width: 600px) {
+      .abbiegung img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Routenplan MD-Rügen</h1>
+  
+  <!-- Streckenkarte -->
+  <div class="map">
+    <img src="route.png" alt="Streckenkarte">
+    <!-- Alternative: Interaktive Google Maps-Karte -->
+    <!-- <iframe src="DEIN_GOOGLE_MAPS_IFRAME_LINK" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  </div>
+  
+  <!-- Abbiegestelle 1 -->
+  <div class="abbiegung">
+    <h2>Abbiegestelle 1</h2>
+    <p>Dreieck Werder -> A10 Richtung Prenzlau/Hamburg</p>
+    <a href="1_Dreieck Werder_groß.png" target="_blank">
+      <img src="1_Dreieck Werder_klein.png" alt="Dreieck Werder">
+    </a>
+  </div>
+  
+  <!-- Abbiegestelle 2 -->
+  <div class="abbiegung">
+    <h2>Abbiegestelle 2</h2>
+    <p>Dreieck Havelland -> A24 Richtung Hamburg/Rostock</p>
+    <a href="2_Dreieck Havelland_groß.png" target="_blank">
+      <img src="2_Dreieck Havelland_klein.png" alt="Dreieck Havelland">
+    </a>
+  </div>
+  
+  <!-- Abbiegestelle 3 -->
+  <div class="abbiegung">
+    <h2>Abbiegestelle 3</h2>
+    <p>Kreuz Rostock -> A20 Richtung Stettin/Stralsung/Lübeck</p>
+    <a href="3_Kreuz Rostock_groß.png" target="_blank">
+      <img src="3_Kreuz Rostock_klein.png" alt="Kreuz Rostock">
+    </a>
+  </div>
+  
+  <!-- Abbiegestelle 4 -->
+  <div class="abbiegung">
+    <h2>Abbiegestelle 4</h2>
+    <p>Hinter Grimmen-Ost, Ausfahrt 24 -> B96 Richtung Stralsung/Sassnitz/Insel Rügen</p>
+    <a href="4_Hinter Grimmen_groß.png" target="_blank">
+      <img src="4_Hinter Grimmen_klein.png" alt="Hinter Grimmen-Ost">
+    </a>
+  </div>
+
+</body>
+</html>
